@@ -1,0 +1,8 @@
+# public/robots.txt
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas if needed
+# Disallow: /admin/
+
+Sitemap: https://reput.com/sitemap.xml
