@@ -1,7 +1,9 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useContact } from "./ContactContext";
+import Image from "next/image";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -23,9 +25,14 @@ export default function Navbar() {
         <nav className="max-w-[1600px] mx-auto flex justify-between items-center px-8 py-5">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            {/* You can add your logo image here */}
-            {/* <img src="/logo.png" alt="RePut logo" className="h-10 w-auto" /> */}
-            <span className="text-2xl font-bold tracking-tight">RePut</span>
+            <Image
+              src="/logoReut02.png"
+              alt="RePut logo"
+              width={70}
+              height={40}
+              priority
+            />
+            {/* <span className="text-2xl font-bold tracking-tight">RePut</span> */}
           </div>
 
           {/* Navigation Links */}
@@ -47,7 +54,7 @@ export default function Navbar() {
                 />
               </li>
             ))}
-          </ul>
+          </ul> 
 
           {/* Contact Button */}
           <div>

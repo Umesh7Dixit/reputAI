@@ -1,4 +1,14 @@
+"use client"
+
+import { useContact } from "./ContactContext";
+
+
+
 export default function ScheduleBanner() {
+
+      const { scrollToContact } = useContact();
+
+
   return (
     <div
       className="bg-[#0B1D3B] text-center py-16 relative w-full"
@@ -12,7 +22,7 @@ export default function ScheduleBanner() {
         Only 6% Of Organizations Have Full Visibility<br className="hidden md:block" /> Over Their Supply Chains
       </h2>
 
-      <button className="bg-white text-[#0B1D3B] font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition">
+      <button  onClick={scrollToContact} className="bg-white text-[#0B1D3B] font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition">
         Schedule a Call
       </button>
     </div>

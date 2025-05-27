@@ -10,6 +10,7 @@ import FeatureSlider from "./components/FeatureSlider";
 // import ContactForm from "./components/ContactForm";
 import ScheduleBanner from "./components/ScheduleBanner";
 import ClientCarousel from "./components/ClientCarousel";
+import RePutBenefits from "./components/RePutBenefits";
 
  
 
@@ -25,6 +26,8 @@ export default function Home() {
       <TextileChallenges/>
       <GlobalVisibility/>
       <FeatureSlider/>
+      <RePutBenefits/>
+
       <ClientCarousel/>
       <ScheduleBanner/>
       {/* <ContactForm/> */}

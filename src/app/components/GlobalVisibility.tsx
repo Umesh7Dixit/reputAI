@@ -1,7 +1,16 @@
+"use client"
+
+
 import Image from "next/image";
 import mapImage from "../../../public/map.jpg"; // update path if needed
+import { useContact } from "./ContactContext";
+
 
 export default function GlobalVisibility() {
+
+      const { scrollToContact } = useContact();
+
+
   return (
     <div
       className="h-screen relative bg-cover bg-center min-h-[500px] flex items-center justify-center"
@@ -29,7 +38,7 @@ export default function GlobalVisibility() {
           </div>
 
           {/* CTA Button */}
-          <button className="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition flex items-center gap-2">
+          <button  onClick={scrollToContact}  className="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition flex items-center gap-2">
             Book A Demo <span className="text-xl">→</span>
           </button>
         </div>
