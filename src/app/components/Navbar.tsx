@@ -25,6 +25,7 @@ export default function Navbar() {
         <nav className="max-w-[1600px] mx-auto flex justify-between items-center px-8 py-5">
           {/* Logo */}
           <div className="flex items-center gap-3">
+             <Link href="/" prefetch={true}>
             <Image
               src="/logoReut02.png"
               alt="RePut logo"
@@ -32,6 +33,7 @@ export default function Navbar() {
               height={40}
               priority
             />
+            </Link>
             {/* <span className="text-2xl font-bold tracking-tight">RePut</span> */}
           </div>
 
