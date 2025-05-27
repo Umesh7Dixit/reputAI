@@ -16,7 +16,8 @@ export default function Footer() {
 
           {/* LinkedIn Icon */}
           <a
-            href="https://www.linkedin.com/company/reputai" // update if needed
+            // href="https://www.linkedin.com/company/reput-ai/posts/?feedView=all" // update if needed
+            href="https://www.linkedin.com/company/reput-ai" // update if needed
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-block text-[#0A66C2] bg-white p-2 rounded hover:bg-gray-200 transition"
