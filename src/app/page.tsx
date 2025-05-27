@@ -11,6 +11,7 @@ import FeatureSlider from "./components/FeatureSlider";
 import ScheduleBanner from "./components/ScheduleBanner";
 import ClientCarousel from "./components/ClientCarousel";
 import RePutBenefits from "./components/RePutBenefits";
+import BlogsResources from "./components/BlogsResources";
 
  
 
@@ -27,6 +28,7 @@ export default function Home() {
       <GlobalVisibility/>
       <FeatureSlider/>
       <RePutBenefits/>
+      <BlogsResources/>
 
       <ClientCarousel/>
       <ScheduleBanner/>
